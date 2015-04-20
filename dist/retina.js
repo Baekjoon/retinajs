@@ -1,7 +1,7 @@
 /*!
- * Retina.js v1.3.0
+ * Retina.js v1.3.1
  *
- * Copyright 2014 Imulus, LLC
+ * Copyright 2015 Imulus, LLC
  * Released under the MIT license
  *
  * Retina.js is an open source script that makes it easy to serve
@@ -50,7 +50,7 @@
             var images = document.getElementsByTagName('img'), retinaImages = [], i, image;
             for (i = 0; i < images.length; i += 1) {
                 image = images[i];
-                if (!!!image.getAttributeNode('data-no-retina')) {
+                if (!!image.getAttributeNode('data-retina')) {
                     retinaImages.push(new RetinaImage(image));
                 }
             }
